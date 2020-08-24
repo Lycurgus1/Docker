@@ -97,3 +97,9 @@ docker push max476/max-docker-first:firstcommit
 - Uninstall and reinstall Docker
 - Go into BIOS and make sure virtulisation is enabled
 
+### Good links
+
+```
+https://forums.docker.com/t/hyper-v-feature-components-missing/89494/19
+https://github.com/docker/for-win/issues/4470
+```
