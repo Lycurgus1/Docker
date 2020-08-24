@@ -86,3 +86,14 @@ docker tag 4bb46517cac3 max476/max-docker-first
 docker push max476/max-docker-first:firstcommit
 ```
 
+## Docker Installation
+
+- If getting the below error see possible troublshooting steps below
+
+![Error](images/HyperVError.PNG)
+
+- Make sure Hyper V Enabled
+	- May be neccessary to disable, restart then enable again
+- Uninstall and reinstall Docker
+- Go into BIOS and make sure virtulisation is enabled
+
