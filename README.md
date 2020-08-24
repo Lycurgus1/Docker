@@ -76,7 +76,7 @@ docker exec -it 090eeef9fee3 sh
 - First create an account at
 ```https://hub.docker.com/```
 
-### 8
+### Step 8
 
 - Push to docker hub
 
