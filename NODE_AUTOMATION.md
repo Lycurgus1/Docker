@@ -1,10 +1,10 @@
 # Creating own microservice
 
-Step 1
+## Step 1
 
 - Unzip app folder from Shahrukh
 
-Step 2
+## Step 2
 
 - Create dockerfile in app folder
 
@@ -39,13 +39,13 @@ EXPOSE 3000
 CMD ["node", "app.js"]
 ```
 
-Step 3.
+## Step 3.
 
-Build image
+- Build image
 
 ```docker build -t max476/node-app-containerised .```
 
-Step 4.
+## Step 4.
 
 Run app from image
 
@@ -54,7 +54,7 @@ docker images
 docker run -d -p 3000:3000 max476/node-app-containerised
 ```
 
-Step 5.
+## Step 5.
 
 Check app has run
 

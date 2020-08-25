@@ -1,6 +1,7 @@
 # Nginx Auto setup
 
-1. Create Docker file
+## 1. Create Docker file
+
 - Per docker file 
 ```
 # Dockerfile for nginx to host our own website
@@ -27,8 +28,10 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
-2. Build docker
-docker build -t max476/nginx-app:v1 .
+## 2. Build docker
 
-3. Push to docker
-docker push max476/nginx-app:v1
+```docker build -t max476/nginx-app:v1 .```
+
+## 3. Push to docker
+
+```docker push max476/nginx-app:v1```
