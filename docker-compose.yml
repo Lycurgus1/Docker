@@ -1,21 +1,33 @@
 version: "2"
 services:
+  # Creating the DB container
   mongo:
+    # Naming container
     container_name: db
+    # Defining image to be used in creation of container
     image: mongo
+    # Defining consistent data
     volumes:
       - ./mongod.conf:/etc/mongod.conf
       - ./logs:/var/log/mongod/
       - ./db:/var/lib/mongodb
-    build: environment/db/.
+    # Defining docker file to run (maybe unneccesary)
+    # build: environment/.
+    # Stating ports to be assigned to server
     ports:
     - "27017:27017"
+  # Creating web container
   web:
+    # Naming container
     container_name: app
+    # Triggeting Docker file with node_app to run
     build: node_app/.
+    # Stating ports to be assigned to server    
     ports:
     - "3000:3000"
+    # Allowing this container to interact with db container
     links:
-    - mongo
+    - db
+    # Defining DB_host environment variable for connection 
     environment:
     - DB_HOST="mongodb://localhost:27017/posts"
