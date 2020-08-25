@@ -27,7 +27,7 @@ services:
     - "3000:3000"
     # Allowing this container to interact with db container
     links:
-    - db
+    - mongo
     # Defining DB_host environment variable for connection 
     environment:
     - DB_HOST="mongodb://localhost:27017/posts"
