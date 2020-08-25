@@ -102,4 +102,13 @@
 
 - Removes container
 
+```
+docker cp ~/DevOps/Docker/app1/static-website-example/index.html 8550acc2214a:/usr/share/nginx/html```
+
+- Copy files from OS to container
+
+```docker cp 8550acc2214a:/var/log/nginx ~/DevOps/Docker/nginx_logs```
+
+- Copy files from container to OS
+
 **For more commands see setup in README**
