@@ -9,6 +9,8 @@
 	- Enables fast conistent dlivery of your application
 - Written in Go
 
+![Docker_diagram](/images/Docker_diagram.PNG)
+
 ## Adoption of Docker
 
 - 20% Companies used in in 2017, 50% in 2020
@@ -24,14 +26,33 @@
 - Light weight and allows moore efficient containerisation platforming
 
 - As per diagram you have to go through less layers before getting to OS
-	- Docker therefore quicker
-- Doesnt install whole OS of VMs, shares physical resources for containers
+	- Docker therefore quicker. Means that more images can run.
+	- Doesnt install whole OS of VMs, shares physical resources for containers
+
+- Less computing power needed, uptime decreased
+- More environments/images can be run
+- Less waiting so developers can spend more time developing
 
 ![Docker_vs_VMs](/images/Docker_vs_VMs.PNG)
 
 ## Containerisation
 
+- Packing up software and dependencies so it can run independently
+- Allows develops to create and deploy applications faster and more securely
+	- Pre containerisation code developed in specific environment, so bugs when going to linux to windows OS
 
+- Allows applications to written once and run anywhere - portability.
+	- Impacts development process and vendor compatability
+
+### Containerisation benefits
+
+- Portability - Container creates executable software package
+- Agility - Enables DevOps and agile tools as docker engine enforces industry standard
+- Speed - Lightweight (See docker notes)
+- Fault isolation - Isolated containers are independent so errors dont affect others and and can isolate faults
+- Efficiency - software running in containers shares machines OS and app layers shared across containers
+- Ease of management - container orchestation tools available
+- Security - applications isolated
 
 ## Notes from Webinar
 
