@@ -48,7 +48,7 @@ docker run ahskhan/nginx-test-rp-app
 
 ```
 docker rm 34e90b4095ba -f
-docker ps confirms
+docker ps # Confirms change
 ```
 
 ### Step 5
