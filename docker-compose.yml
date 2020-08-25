@@ -1,0 +1,21 @@
+version: "2"
+services:
+  mongo:
+    container_name: db
+    image: mongo
+    volumes:
+      - ./mongod.conf:/etc/mongod.conf
+      - ./logs:/var/log/mongod/
+      - ./db:/var/lib/mongodb
+    build: environment/db/.
+    ports:
+    - "27017:27017"
+  web:
+    container_name: app
+    build: node_app/.
+    ports:
+    - "3000:3000"
+    links:
+    - mongo
+    environment:
+    - DB_HOST="mongodb://localhost:27017/posts"
