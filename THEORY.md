@@ -1,5 +1,38 @@
 # Docker Theory
 
+## What is Docker
+
+- Open source platform for containerisation
+- Light weight compares to VMs
+	- Docker shares the memory of OS rather than creating entire virutal env
+- Enables you to seperate your infastructe so you can deliver software quickly
+	- Enables fast conistent dlivery of your application
+- Written in Go
+
+## Adoption of Docker
+
+- 20% Companies used in in 2017, 50% in 2020
+	- Powered by trend setters (facebook, paypal etc.)
+
+- Most trending containerisation technology in tech world. 
+	- Best containerisation platform
+	- Designed to make it easier to create, deploy, and run applications
+	- Easy to configure
+
+## Using Docker vs Virtual machines
+
+- Light weight and allows moore efficient containerisation platforming
+
+- As per diagram you have to go through less layers before getting to OS
+	- Docker therefore quicker
+- Doesnt install whole OS of VMs, shares physical resources for containers
+
+![DockervsVMs](images/Docker_vs_VMs)
+
+## Containerisation
+
+
+
 ## Notes from Webinar
 
 **Kubernetes**
@@ -24,7 +57,7 @@
 - Togethor are transformation enablers and tools
 
 
-## Docker Theory
+## Docker Commands
 
 ```docker ps```
 
