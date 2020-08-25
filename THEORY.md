@@ -80,6 +80,10 @@
 
 ## Docker Commands
 
+```docker history nginx```
+
+- Shows history of image, how the images are created
+
 ```docker ps```
 
 - Checks container running
