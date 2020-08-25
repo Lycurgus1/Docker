@@ -14,9 +14,9 @@ FROM nginx
 
 LABEL MAINTAINER=MAX@SPARTAGLOBAL
 
-# Copy the App1 Folder from out host to our container
+# Copy the App Folder from out host to our container
 
-COPY app1 /usr/share/nginx/html
+COPY app /usr/share/nginx/html
 
 # Expose the port
 
