@@ -82,7 +82,7 @@ docker exec -it 090eeef9fee3 sh
 
 ```
 docker login -u max476
-docker tag 4bb46517cac3 max476/max-docker-first
+docker tag 4bb46517cac3 max476/max-docker-first:firstcommit
 docker push max476/max-docker-first:firstcommit
 ```
 
