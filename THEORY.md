@@ -112,3 +112,21 @@ docker cp ~/DevOps/Docker/app1/static-website-example/index.html 8550acc2214a:/u
 - Copy files from container to OS
 
 **For more commands see setup in README**
+
+
+## Task to copy folder and get container logs into text file
+
+Step 1
+docker cp ~/DevOps/Docker/app1 4abd2006f8a8:folder
+
+Step 2 
+docker stop 4abd2006f8a8
+docker start 4abd2006f8a8
+
+Step 3
+docker logs 4abd2006f8a8 >> nginx_logs.txt
+# NOT CURRENTLY working
+
+Step 4
+docker tag max476/max-docker-first:firstcommit max476/max-docker-first:updated-webapp
+docker push max476/max-docker-first:updated-webapp
