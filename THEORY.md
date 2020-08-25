@@ -27,7 +27,7 @@
 	- Docker therefore quicker
 - Doesnt install whole OS of VMs, shares physical resources for containers
 
-![DockervsVMs](images/Docker_vs_VMs)
+![Docker_vs_VMs](/images/Docker_vs_VMs.PNG)
 
 ## Containerisation
 
