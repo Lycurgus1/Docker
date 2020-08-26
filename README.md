@@ -1,5 +1,5 @@
 
-![image](images/docker_logo.png)
+![image](images/docker_logo.PNG)
 
 # Docker Repositry
 
