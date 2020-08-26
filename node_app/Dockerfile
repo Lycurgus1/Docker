@@ -1,13 +1,12 @@
-# Select base image to build our own customised node-app microservice
+# Use the base image
 
-FROM node:alpine
+FROM node AS app
 
-# Working directory
+# Define the working directory inside the container
 
 WORKDIR /usr/src/app
 
-# Copy depenendencies
-# Copies all packages with wild card character
+# Copy the dependencies
 
 COPY package*.json ./
 
@@ -17,11 +16,24 @@ RUN npm install
 
 # Copies everything from here(app folder) to default location there
 
-COPY . . 
+COPY . .
+
+# Second stage of our build for production - multi stage build
+
+FROM node:alpine
+
+# Copy only essental things
+
+COPY --from=app /usr/src/app /usr/src/app
+
+# Define the working directory inside the container for second stage
+
+WORKDIR /usr/src/app
 
 # Define port for (default node app)
 
 EXPOSE 3000
 
-# Run app and seed the posts
+# Run app
+
 CMD ["node", "app.js"]

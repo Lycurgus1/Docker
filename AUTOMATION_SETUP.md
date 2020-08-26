@@ -75,6 +75,7 @@ Check app has run
 - As per docker-compose file in this container
 - Within node_app there is a dockerfile that is run as part of docker compose
 	- Therefore you need an app folder with a identical dockerfile in it
+	- This is shown in step 2 of node app setup
 
 ### 2. Run docker compose file
 
