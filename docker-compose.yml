@@ -13,8 +13,6 @@ services:
      - ./mongod.conf:/etc/mongod.conf
      - ./logs:/var/log/mongod/
      - ./db:/var/lib/mongodb
-    # Defining docker file to run (maybe unneccesary)
-    # build: environment/.
     # Stating ports to be assigned to server
     ports:
     - "27017:27017"
@@ -34,4 +32,5 @@ services:
     # Defining DB_host environment variable for connection 
     environment:
     - DB_HOST=mongodb://mongo:27017/posts
+    #command: node seeds/seed.js
 

@@ -23,6 +23,5 @@ COPY . .
 
 EXPOSE 3000
 
-# Run app
-
+# Run app and seed the posts
 CMD ["node", "app.js"]

@@ -2,10 +2,13 @@
 
 - For Theory see Theory.md
 - For setup see below
+- Once docker has been basically set-up there is follow up file for automating container setup
 
 ## Dependencies
 
-- Git bash
+- Git bash - download here
+```https://gitforwindows.org/```
+
 - Docker installed(see below for Docker Installation steps)
 
 ## Docker Intro Steps
@@ -86,7 +89,15 @@ docker tag 4bb46517cac3 max476/max-docker-first:firstcommit
 docker push max476/max-docker-first:firstcommit
 ```
 
+### Step 9
+
+- Once this is done follow the Node and Post automation guide to connect the sparta node app to mongo
+
 ## Docker Installation 
+
+- Follow the steps here
+
+```https://docs.docker.com/get-docker/```
 
 - If getting the below error see possible troublshooting steps below
 
@@ -97,6 +108,8 @@ docker push max476/max-docker-first:firstcommit
 	- May be neccessary to disable, restart then enable again
 - Uninstall and reinstall Docker
 - Go into BIOS and make sure virtulisation is enabled
+	- There is several links online, see below for one
+	```https://support.bluestacks.com/hc/en-us/articles/115003174386-How-can-I-enable-virtualization-VT-on-my-PC-```
 
 ### Good links
 
