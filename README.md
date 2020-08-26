@@ -102,7 +102,7 @@ docker push max476/max-docker-first:firstcommit
 
 ### Step 10
 
-- Once this is done follow the Node and Post automation guide to connect the sparta node app to mongo
+- Once this is done follow ```AUTOMATION_SETUP.md``` to connect the sparta node app to mongo
 
 ## Docker Errors 
 
