@@ -1,10 +1,9 @@
 
-![aaa](images/docker_logo.png)
-
 # Docker Repositry
 
 - For Theory see Theory.md
 - For setup see below
+	- This applies to windows
 - Once docker has been basically set-up there is follow up files for automating container setup
 
 ## Dependencies
@@ -16,7 +15,16 @@
 
 ## Docker Intro Steps
 
-### Step 1
+### Step 1 
+- Install docker
+
+- Follow the steps here
+
+```https://docs.docker.com/get-docker/```
+
+- If getting errors see possible troublshooting steps below
+
+### Step 2
 - Check Docker Installed
 
 ```
@@ -28,7 +36,7 @@ docker --version
 docker up
 ```
 
-### Step 2
+### Step 3
 - Work with image
 
 ```
@@ -37,7 +45,7 @@ docker images # Will show images downloaded. Should show nginx
 docker run ahskhan/nginx-test-rp-app
 ```
 
-### Step 3 
+### Step 4 
 
 - Run docker image
 
@@ -48,7 +56,7 @@ docker run ahskhan/nginx-test-rp-app
 
 ```localhost```
 
-### Step 4
+### Step 5
 
 - Remove container. Based on docker id (the misc string). -f to force.
 
@@ -57,7 +65,7 @@ docker rm 34e90b4095ba -f
 docker ps # Confirms change
 ```
 
-### Step 5
+### Step 6
 
 - Run server in seperate app. "-d" Illustrates this
 
@@ -65,7 +73,7 @@ docker ps # Confirms change
 docker run -d -p 80:80 ahskhan/nginx-test-rp-app:v2
 ```
 
-### Step 6
+### Step 7
 
 - Enter container
 
@@ -76,13 +84,13 @@ docker exec -it 090eeef9fee3 sh
 - You are now inside nginx container. Has linux container
 - Type ```exit``` to exit
 
-### Step 7
+### Step 8
 
 - Create docker hub
 - First create an account at
 ```https://hub.docker.com/```
 
-### Step 8
+### Step 9
 
 - Push to docker hub
 
@@ -92,17 +100,11 @@ docker tag 4bb46517cac3 max476/max-docker-first:firstcommit
 docker push max476/max-docker-first:firstcommit
 ```
 
-### Step 9
+### Step 10
 
 - Once this is done follow the Node and Post automation guide to connect the sparta node app to mongo
 
-## Docker Installation 
-
-- Follow the steps here
-
-```https://docs.docker.com/get-docker/```
-
-- If getting the below error see possible troublshooting steps below
+## Docker Errors 
 
 ![Error](images/HyperVError.PNG)
 
