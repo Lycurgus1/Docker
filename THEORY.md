@@ -54,30 +54,6 @@
 - Ease of management - container orchestation tools available
 - Security - applications isolated
 
-## Notes from Webinar
-
-**Kubernetes**
-
-- Lots of new job roles
-- Developed by google
-	- Now open source
-- Self healing
-- Auto scaling and load balancing
-- Can set autoscaling
-	- Maximum and minmum pod number set
-
-**Adopting micro services**
-
-- start small, use iterations
-- use docker/kubernetes to test and self heal
-
-**Docker and Kuberntes**
-
-- Docker creates containers
-- Kubernetes manages them
-- Togethor are transformation enablers and tools
-
-
 ## Docker Commands
 
 ```docker history nginx```
@@ -102,8 +78,7 @@
 
 - Removes container
 
-```
-docker cp ~/DevOps/Docker/app1/static-website-example/index.html 8550acc2214a:/usr/share/nginx/html```
+```docker cp ~/DevOps/Docker/app1/static-website-example/index.html 8550acc2214a:/usr/share/nginx/html```
 
 - Copy files from OS to container
 
@@ -113,20 +88,54 @@ docker cp ~/DevOps/Docker/app1/static-website-example/index.html 8550acc2214a:/u
 
 **For more commands see setup in README**
 
+## Docker Compose Volumes
+
+```
+ volumes:
+  - ".:/app:rw"
+  - "./data:/data:rw"
+```
+
+- Maps Directory from computer to container
+	- If existing directory in container then it will be overwritten
+
+
+## Notes from Webinar
+
+**Kubernetes**
+
+- Lots of new job roles
+- Developed by google
+	- Now open source
+- Self healing
+- Auto scaling and load balancing
+- Can set autoscaling
+	- Maximum and minmum pod number set
+
+**Adopting micro services**
+
+- start small, use iterations
+- use docker/kubernetes to test and self heal
+
+**Docker and Kuberntes**
+
+- Docker creates containers
+- Kubernetes manages them
+- Togethor are transformation enablers and tools
+
 
 ## Task to copy folder and get container logs into text file
 
 Step 1
-docker cp ~/DevOps/Docker/app1 4abd2006f8a8:folder
+```docker cp ~/DevOps/Docker/app1 4abd2006f8a8:folder```
 
 Step 2 
-docker stop 4abd2006f8a8
-docker start 4abd2006f8a8
+- docker stop 4abd2006f8a8
+- docker start 4abd2006f8a8
 
 Step 3
-docker logs 4abd2006f8a8 >> nginx_logs.txt
-# NOT CURRENTLY working
+- docker logs 4abd2006f8a8 >> nginx_logs.txt # NOT CURRENTLY working
 
 Step 4
-docker tag max476/max-docker-first:firstcommit max476/max-docker-first:updated-webapp
-docker push max476/max-docker-first:updated-webapp
+- docker tag max476/max-docker-first:firstcommit max476/max-docker-first:updated-webapp
+- docker push max476/max-docker-first:updated-webapp

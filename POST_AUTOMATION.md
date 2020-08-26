@@ -15,6 +15,15 @@
 
 ```docker-compose up```
 
+### 3. Check app is running
+
+- Check the below links
+
+```
+localhost:3000
+localhost:3000/posts
+```
+
 ## Seeding posts
 
 - Currently posts are not seeded. This can be done but is not automated
@@ -33,4 +42,4 @@
 
 ```docker-compose up```
 
-### This runs a seeded post page
+**This runs a seeded post page**
