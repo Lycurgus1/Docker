@@ -2,7 +2,7 @@
 
 - For Theory see Theory.md
 - For setup see below
-- Once docker has been basically set-up there is follow up file for automating container setup
+- Once docker has been basically set-up there is follow up files for automating container setup
 
 ## Dependencies
 
