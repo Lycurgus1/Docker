@@ -3,7 +3,7 @@
 
 - For Theory see Theory.md
 - For setup see below
-	- This applies to windows
+	- This applies to systems with windows operating system
 - Once docker has been basically set-up there is follow up files for automating container setup
 
 ## Dependencies
