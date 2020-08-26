@@ -7,9 +7,11 @@
 
 ## Steps
 
-### 1. Create docker compose file
+### 1. Create needed files (docker-compose & node dockerfile)
 
-- As per docker compose file in this container
+- As per docker-compose file in this container
+- Within node_app there is a dockerfile that is run as part of docker compose
+	- Therefore you need an app folder with a identical dockerfile in it
 
 ### 2. Run docker compose file
 
