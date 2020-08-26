@@ -1,3 +1,6 @@
+
+![docker_logo](images/docker_logo.png)
+
 # Docker Repositry
 
 - For Theory see Theory.md
