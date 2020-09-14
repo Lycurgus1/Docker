@@ -11,8 +11,6 @@
 - Git bash - download here
 ```https://gitforwindows.org/```
 
-- Docker installed(see below for Docker Installation steps)
-
 ## Docker Intro Steps
 
 ### Step 1 
