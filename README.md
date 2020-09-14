@@ -1,8 +1,8 @@
 
 # Docker Repositry
 
-- For Theory see Theory.md
-- For setup see below
+- Wider Docker theory is discussed in Theory.md
+- For a basic Docker setup see below
 	- This applies to systems with windows operating system
 - Once docker has been basically set-up there is follow up files for automating container setup
 
